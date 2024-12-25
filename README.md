@@ -1,37 +1,31 @@
-# Farm + Vue
+# Issue reproduction for postcss hmr
 
-This template should help you start developing using Vue and TypeScript in Farm.
+Reproduction for <https://github.com/farm-fe/farm/issues/2024>.
 
-## Setup
+## Way to reproduce
 
-Install the dependencies:
+1. Install dependencies
 
-```bash
-pnpm install
-```
+   ```bash
+   pnpm install
+   ```
 
-## Get Started
+2. Start farm dev server
 
-Start the dev server:
+   ```bash
+   pnpm dev
+   ```
 
-```bash
-pnpm start
-```
+3. Open test link in browser
 
-Build the app for production:
+   Click and open <http://localhost:9000/#/page>. As we can see, the background is filled with gray.
 
-```bash
-pnpm build
-```
+4. Change class name in `src/views/page.vue`
 
-Preview the Production build product:
+   The original class is `bg-gray-800`, change it to `bg-gray-900` or other background classes.
 
-```bash
-pnpm preview
-```
+   You can see the background is white after change the class.
 
-Clear persistent cache local files
+## Platform
 
-```bash
-pnpm clean
-```
+   Arch Linux
