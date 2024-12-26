@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@farmfe/cli": "^1.0.4",
-    "@farmfe/core": "^1.6.1",
+    "@farmfe/core": "^1.6.2",
     "@farmfe/js-plugin-postcss": "^1.11.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "autoprefixer": "^10.4.20",
